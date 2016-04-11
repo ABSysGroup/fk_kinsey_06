@@ -1,0 +1,8 @@
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/constants.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/mux2a1.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/reg.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/mult_4x4_4x1.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/ff.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/mult_4x4_4x1_addr_seq_alt.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/linear_1x4_addr_cntr_alt.vhd
+vhdl  gain  K:/fk_kinsey_06/src/design/gain/hdl/mult_p_ht_fast.vhd

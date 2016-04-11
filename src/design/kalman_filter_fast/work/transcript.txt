@@ -1,0 +1,457 @@
+# //  Questa Sim-64
+# //  Version 10.1d win64 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L kalman_filter_fast -L ip -L correction -L common -L gain -L h_dinamic -L prediction -L xilinxcorelib -do {add log -r *} -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} kalman_filter_fast.kalman_filter_fast(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Warning: (vopt-3) System call GetVolumeInformation failed.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "correction_fsm(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_rd_addr_seq_2bit(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_rd_addr_seq(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_wr_addr_seq(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_wr_addr_seq_2bit(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "sub_4X4_seq(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "subs_4X4(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_4x4_addr_cntr(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x4_4x4(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x4_4x4_seq(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x1_1x4(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x1_1x4_seq(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uc_p_correction_fast(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_1x4_4x1(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_1x4_4x1_addr_seq_alt(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_1x4_addr_cntr_alt(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x1_scalar(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x1_scalar_seq(struct)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uc_x_correction_fast(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "adder_4x1(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "adder_4x1_seq(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_wr_addr_seq_2bit(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x4_4x1(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_4x4_4x1_addr_seq_alt(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uc_gain_fast(struct)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_vect_4x1_Seq_fast(struct)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_vec_4x1_fast(struct)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uc_h_dinamic_fast(struct)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "adder_4x4(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "adder_4x4_addr_seq(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_addr_seq_trasp(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uc_p(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uc_x(rtl)".
+# 
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.kalman_filter_fast(struct)#1
+# Loading prediction.constants(body)
+# Loading ieee.numeric_std(body)
+# Loading prediction.correction_fast(struct)#1
+# Loading prediction.mux2a1(rtl)#1
+# Loading prediction.reg_ready_4_signals(rtl)#1
+# Loading prediction.rom4x4(rtl)#1
+# Loading prediction.correction_fsm(fsm)#1
+# Loading prediction.fifo_read_gain(rtl)#1
+# Loading prediction.fifo_read_2bit(rtl)#1
+# Loading prediction.ff(rtl)#1
+# Loading prediction.linear_rd_addr_seq_2bit(fsm)#1
+# Loading prediction.reg(rtl)#1
+# Loading prediction.ram4x1_alt(rtl)#1
+# Loading prediction.fifo_read_h(struct)#1
+# Loading prediction.fifo_read_pp(rtl)#1
+# Loading prediction.fifo_read(rtl)#1
+# Loading prediction.linear_rd_addr_seq(fsm)#1
+# Loading prediction.reg(rtl)#2
+# Loading prediction.ram4x4(rtl)#1
+# Loading prediction.fifo_read_xpr(rtl)#1
+# Loading prediction.fifo_write_ppo(rtl)#1
+# Loading prediction.fifo_write(rtl)#1
+# Loading prediction.linear_wr_addr_seq(fsm)#1
+# Loading prediction.fifo_write_xc(rtl)#1
+# Loading prediction.fifo_write_2bit(rtl)#1
+# Loading prediction.linear_wr_addr_seq_2bit(fsm)#1
+# Loading prediction.p_correction_fast(struct)#1
+# Loading prediction.i_sub_kh_fast(struct)#1
+# Loading prediction.sub_4x4_seq(rtl)#1
+# Loading prediction.subs_4x4(rtl)#1
+# Loading prediction.reg(rtl)#3
+# Loading prediction.substractor(rtl)#1
+# Loading prediction.ikh_mult_pp_fast(struct)#1
+# Loading prediction.linear_4x4_addr_cntr(rtl)#1
+# Loading prediction.mult_4x4_4x4(rtl)#1
+# Loading prediction.mux2a1(rtl)#2
+# Loading prediction.round_mult(struct)#1
+# Loading prediction.mult_4x4_4x4_seq(rtl)#1
+# Loading prediction.k_mult_h_fast(struct)#1
+# Loading prediction.mult_4x1_1x4(rtl)#1
+# Loading prediction.mult_4x1_1x4_seq(rtl)#1
+# Loading prediction.uc_p_correction_fast(fsm)#1
+# Loading prediction.x_correction_fast(struct)#1
+# Loading prediction.ram_reg(rtl)#1
+# Loading prediction.h_mult_xp_fast(struct)#1
+# Loading prediction.mult_1x4_4x1(rtl)#1
+# Loading prediction.mux2a1(rtl)#3
+# Loading prediction.mult_1x4_4x1_addr_seq_alt(rtl)#1
+# Loading prediction.k_mult_residual_fast(struct)#1
+# Loading prediction.linear_1x4_addr_cntr_alt(rtl)#1
+# Loading prediction.mult_4x1_scalar(rtl)#1
+# Loading prediction.mult_4x1_scalar_seq(struct)#1
+# Loading prediction.residual_fast(struct)#1
+# Loading prediction.uc_x_correction_fast(fsm)#1
+# Loading prediction.xp_plus_kresiduo_fast(struct)#1
+# Loading prediction.adder_4x1(rtl)#1
+# Loading prediction.adder_4x1_seq(rtl)#1
+# Loading prediction.gain_fast(struct)#1
+# Loading prediction.fifo_write_2bit(rtl)#2
+# Loading prediction.linear_wr_addr_seq_2bit(fsm)#2
+# Loading prediction.inversion(rtl)#1
+# Loading prediction.round_div(struct)#1
+# Loading prediction.ram4x1(rtl)#1
+# Loading prediction.reg_ready_2_signals(struct)#1
+# Loading prediction.mult_hpht_r_fast(struct)#1
+# Loading prediction.adder(rtl)#1
+# Loading prediction.mult_p_ht_fast(struct)#1
+# Loading prediction.mult_4x4_4x1(rtl)#1
+# Loading prediction.mult_4x4_4x1_addr_seq_alt(rtl)#1
+# Loading prediction.uc_gain_fast(struct)#1
+# Loading h_dinamic.h_dinamic_fast(struct)#1
+# Loading prediction.rom1x4(rtl)#1
+# Loading h_dinamic.calc_h_dinamic_fast(struct)#1
+# Loading prediction.mult_vect_4x1_seq_fast(struct)#1
+# Loading h_dinamic.mult_vec_4x1_fast(struct)#1
+# Loading h_dinamic.uc_h_dinamic_fast(struct)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading prediction.fifo_communications(fifo_communications_a)#1
+# Loading xilinxcorelib.fifo_generator_v9_1(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v9_1_conv(behavioral)#1
+# ** Warning: (vsim-3479) Time unit 'ps' is less than the simulator resolution (1ns).
+#    Time: 0 ns  Iteration: 0  Instance: /kalman_filter_fast/c2p_fast_pc/U0/gconvfifo/inst_conv_fifo
+# Loading xilinxcorelib.fifo_generator_v9_1_bhv_ss(behavioral)#1
+# Loading prediction.prediction(rtl)#1
+# Loading prediction.calc_p(rtl)#1
+# Loading prediction.mux2a1(rtl)#4
+# Loading prediction.add_apa_q(rtl)#1
+# Loading prediction.adder_4x4(rtl)#1
+# Loading prediction.adder_4x4_addr_seq(rtl)#1
+# Loading prediction.mult_a_p(rtl)#1
+# Loading prediction.mult_ap_a(rtl)#1
+# Loading prediction.mult_addr_seq_trasp(rtl)#1
+# Loading prediction.uc_p(rtl)#1
+# Loading prediction.calc_x(rtl)#1
+# Loading prediction.mult_a_x(rtl)#1
+# Loading prediction.uc_x(rtl)#1
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_pc/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_pc/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_pc/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_pc/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_pc/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_pc/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_pc/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_pc/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_pc/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_pc/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_xc/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_xc/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_xc/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_xc/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_xc/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_xc/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_xc/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_xc/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/c2p_fast_xc/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/c2p_fast_xc/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/g2c_fast_k/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/g2c_fast_k/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/g2c_fast_k/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/g2c_fast_k/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/g2c_fast_k/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/g2c_fast_k/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/g2c_fast_k/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/g2c_fast_k/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/g2c_fast_k/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/g2c_fast_k/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2c_hd_fast/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2c_hd_fast/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2c_hd_fast/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2c_hd_fast/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2c_hd_fast/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2c_hd_fast/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2c_hd_fast/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2c_hd_fast/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2c_hd_fast/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2c_hd_fast/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2g_hd_fast/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2g_hd_fast/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2g_hd_fast/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2g_hd_fast/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2g_hd_fast/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2g_hd_fast/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2g_hd_fast/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2g_hd_fast/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/h2g_hd_fast/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/h2g_hd_fast/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_pp/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_pp/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_pp/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_pp/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_pp/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_pp/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_pp/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_pp/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_pp/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_pp/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_xp/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_xp/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_xp/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_xp/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_xp/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_xp/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_xp/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_xp/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2c_fast_xp/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2c_fast_xp/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2g_fast_pp/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2g_fast_pp/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2g_fast_pp/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2g_fast_pp/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2g_fast_pp/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2g_fast_pp/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2g_fast_pp/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2g_fast_pp/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2g_fast_pp/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2g_fast_pp/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2h_xp_fast/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2h_xp_fast/U0/PROG_EMPTY.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2h_xp_fast/U0/gconvfifo/inst_conv_fifo/gen_ss/fgss/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2h_xp_fast/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2h_xp_fast/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2h_xp_fast/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2h_xp_fast/U0/gconvfifo/inst_conv_fifo/PROG_FULL, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2h_xp_fast/U0/PROG_FULL.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /kalman_filter_fast/p2h_xp_fast/U0/gconvfifo/inst_conv_fifo/PROG_EMPTY, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /kalman_filter_fast/p2h_xp_fast/U0/PROG_EMPTY.
+# 
+# add log -r * 

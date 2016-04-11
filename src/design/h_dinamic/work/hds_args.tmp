@@ -1,0 +1,1 @@
+ -do "add log -r *" -L h_dinamic -L common -l transcript.txt -i -t ns -multisource_delay latest +typdelays h_dinamic.h_dinamic_fast(struct)

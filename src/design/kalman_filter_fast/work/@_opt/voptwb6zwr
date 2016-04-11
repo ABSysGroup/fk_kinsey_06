@@ -1,0 +1,188 @@
+m255
+K3
+13
+cModel Technology
+Z0 dK:\fk_kinsey_06\src\design\h_dinamic\work
+T_opt
+VJ1L^c6OPbNNRBFTcRASJL1
+04 17 6 work mult_vec_4x1_fast struct 1
+=1-3ca9f421a980-558250a7-93-31b4
+o-quiet +acc -auto_acc_if_foreign -work h_dinamic -L common -L h_dinamic
+Z1 n@_opt
+Z2 OL;O;10.1d;51
+Z3 dK:\fk_kinsey_06\src\design\h_dinamic\work
+T_opt1
+VQ1aoal9I0RIcEn5W[R?SZ2
+04 14 6 work h_dinamic_fast struct 1
+=1-3ca9f421a980-5582774d-7f-2fb4
+o-quiet +acc -auto_acc_if_foreign -work h_dinamic -L h_dinamic -L common
+Z4 n@_opt1
+R2
+R3
+Ecalc_h_dinamic_fast
+Z5 w1434883057
+Z6 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z9 8K:/fk_kinsey_06/src/design/h_dinamic/hdl/calc_h_dinamic_fast.vhd
+Z10 FK:/fk_kinsey_06/src/design/h_dinamic/hdl/calc_h_dinamic_fast.vhd
+l0
+L13
+VbWM3GU=B_:XDN@?WP5bGn3
+Z11 OL;C;10.1d;51
+32
+Z12 !s108 1434879459.934000
+Z13 !s90 -work|h_dinamic|-nologo|-f|C:/cygwin64/tmp/Files0|
+Z14 !s107 K:/fk_kinsey_06/src/design/h_dinamic/hdl/h_dinamic_fast.vhd|K:/fk_kinsey_06/src/design/h_dinamic/hdl/calc_h_dinamic_fast.vhd|K:/fk_kinsey_06/src/design/h_dinamic/hdl/mult_vec_4x1_fast.vhd|
+Z15 o-work h_dinamic -nologo
+Z16 tExplicit 1
+!s100 c[b4D]IiZ]o1<EbHSXiSS1
+!i10b 1
+Astruct
+Z17 DEx6 common 3 reg 0 22 _PDfn9d=C^^Y3_zGmN_7O0
+Z18 DEx6 common 22 mult_vect_4x1_seq_fast 0 22 80;550S>OO60GDB:TB3ej0
+DEx9 h_dinamic 17 mult_vec_4x1_fast 0 22 @dA_8?@zU1jYZ8SIdl6[n1
+Z19 DEx6 common 24 linear_1x4_addr_cntr_alt 0 22 3Zh]`oVHiJN?jWGj=gXO:3
+Z20 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z21 DEx6 common 2 ff 0 22 HDah`AUPheF=ldLNTT2jY0
+DEx4 work 19 calc_h_dinamic_fast 0 22 bWM3GU=B_:XDN@?WP5bGn3
+Z22 DPx6 common 9 constants 0 22 `HA1FUWFiUOanML65i_`N3
+R6
+R7
+R8
+l123
+L49
+VjNQ9jB4Sa8fI3z6iK[1911
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 =7oG1_Mki3N`]BF6`T]T_1
+!i10b 1
+Eh_dinamic_fast
+R5
+R6
+R7
+R8
+R3
+Z23 8K:/fk_kinsey_06/src/design/h_dinamic/hdl/h_dinamic_fast.vhd
+Z24 FK:/fk_kinsey_06/src/design/h_dinamic/hdl/h_dinamic_fast.vhd
+l0
+L13
+VL5YzQF8XceSVGP`:b[kM`0
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 OieXV[Rb`V5O41G:]XWXZ3
+!i10b 1
+Astruct
+DEx9 h_dinamic 17 uc_h_dinamic_fast 0 22 c[WQ6YWMHYddUQQD6M3c^1
+Z25 DEx6 common 6 rom1x4 0 22 g=Q71_1cWgTaPC>gb[?9g3
+Z26 DEx6 common 10 ram4x1_alt 0 22 o5ODFNM@3E9VJ1dmWign01
+Z27 DEx6 common 15 fifo_write_2bit 0 22 F4DbgE7moJHmf?JbJ^BS@3
+R20
+Z28 DEx6 common 14 fifo_read_2bit 0 22 >;7cXLQ5U74L:h8=@KCO70
+DEx9 h_dinamic 19 calc_h_dinamic_fast 0 22 bWM3GU=B_:XDN@?WP5bGn3
+DEx4 work 14 h_dinamic_fast 0 22 L5YzQF8XceSVGP`:b[kM`0
+R22
+R6
+R7
+R8
+l160
+L46
+VSzmL4:KWWgHUX>ob0W8d[0
+!s100 JU0Bamkz?92Y_Y4zbjU381
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!i10b 1
+Emult_vec_4x1_fast
+R5
+R22
+R20
+R7
+R8
+R3
+Z29 8K:/fk_kinsey_06/src/design/h_dinamic/hdl/mult_vec_4x1_fast.vhd
+Z30 FK:/fk_kinsey_06/src/design/h_dinamic/hdl/mult_vec_4x1_fast.vhd
+l0
+L15
+V@dA_8?@zU1jYZ8SIdl6[n1
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 <jdzTm^T^CC:[EheSj;JT2
+!i10b 1
+Astruct
+Z31 DEx6 common 10 round_mult 0 22 U@e=je:E[[Q_RD]IeFOon1
+R17
+DEx4 work 17 mult_vec_4x1_fast 0 22 @dA_8?@zU1jYZ8SIdl6[n1
+R22
+R20
+R7
+R8
+l101
+L47
+V^^<[;ecPl7Ya9oz2;G4P^2
+!s100 SidoZJ_ONZ72IRlM?9e2=0
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!i10b 1
+Euc_h_dinamic_fast
+Z32 w1434610237
+R6
+R7
+R8
+R3
+Z33 8K:/fk_kinsey_06/src/design/h_dinamic/hdl/uc_h_dinamic_fast.vhd
+Z34 FK:/fk_kinsey_06/src/design/h_dinamic/hdl/uc_h_dinamic_fast.vhd
+l0
+L13
+Vc[WQ6YWMHYddUQQD6M3c^1
+R11
+32
+Z35 !s108 1434606638.206000
+R13
+Z36 !s107 K:/fk_kinsey_06/src/design/h_dinamic/hdl/h_dinamic_fast.vhd|K:/fk_kinsey_06/src/design/h_dinamic/hdl/uc_h_dinamic_fast.vhd|K:/fk_kinsey_06/src/design/h_dinamic/hdl/calc_h_dinamic_fast.vhd|
+R15
+R16
+!s100 Sb42[Pb71C=dXLId[:NKj2
+!i10b 1
+Astruct
+DEx4 work 17 uc_h_dinamic_fast 0 22 c[WQ6YWMHYddUQQD6M3c^1
+R6
+R7
+R8
+l67
+L44
+V8K55EAbgR]gEmI2Hj9Xf]0
+R11
+32
+R35
+R13
+R36
+R15
+R16
+!s100 @]]_;bSbd=6]C;bkL5G1_3
+!i10b 1

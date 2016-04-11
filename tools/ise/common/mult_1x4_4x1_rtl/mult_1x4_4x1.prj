@@ -1,0 +1,4 @@
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/constants.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/mux2a1.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/reg.vhd
+vhdl  common  K:/fk_kinsey_06/src/design/common/hdl/mult_1x4_4x1.vhd

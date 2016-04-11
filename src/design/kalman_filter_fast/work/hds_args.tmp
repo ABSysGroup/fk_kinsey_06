@@ -1,0 +1,1 @@
+ -do "add log -r *" -L kalman_filter_fast -L ip -L correction -L common -L gain -L h_dinamic -L prediction -L xilinxcorelib -l transcript.txt -i -t ns -multisource_delay latest +typdelays kalman_filter_fast.kalman_filter_fast(struct)

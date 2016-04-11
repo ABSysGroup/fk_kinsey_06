@@ -1,0 +1,1 @@
+ -do "add log -r *" -L tb_h_dinamic -L h_dinamic -L common -L ip -L xilinxcorelib -l transcript.txt -i -t ns -multisource_delay latest +typdelays tb_h_dinamic.tb_h_dinamic_fast(struct)

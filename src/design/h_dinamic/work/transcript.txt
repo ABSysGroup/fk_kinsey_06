@@ -1,0 +1,54 @@
+# //  Questa Sim-64
+# //  Version 10.1d win64 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L h_dinamic -L common -do {add log -r *} -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} h_dinamic.h_dinamic_fast(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Warning: (vopt-3) System call GetVolumeInformation failed.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_rd_addr_seq_2bit(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_wr_addr_seq_2bit(fsm)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "linear_1x4_addr_cntr_alt(rtl)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_vect_4x1_Seq_fast(struct)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "mult_vec_4x1_fast(struct)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uc_h_dinamic_fast(struct)".
+# 
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading common.constants(body)
+# Loading ieee.numeric_std(body)
+# Loading work.h_dinamic_fast(struct)#1
+# Loading common.fifo_read_2bit(rtl)#1
+# Loading common.ff(rtl)#1
+# Loading common.linear_rd_addr_seq_2bit(fsm)#1
+# Loading common.reg(rtl)#1
+# Loading common.fifo_write_2bit(rtl)#1
+# Loading common.linear_wr_addr_seq_2bit(fsm)#1
+# Loading common.ram4x1_alt(rtl)#1
+# Loading common.rom1x4(rtl)#1
+# Loading work.calc_h_dinamic_fast(struct)#1
+# Loading common.linear_1x4_addr_cntr_alt(rtl)#1
+# Loading common.mult_vect_4x1_seq_fast(struct)#1
+# Loading common.reg(rtl)#2
+# Loading work.mult_vec_4x1_fast(struct)#1
+# Loading common.round_mult(struct)#1
+# Loading work.uc_h_dinamic_fast(struct)#1
+# add log -r * 
